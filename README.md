@@ -6,9 +6,9 @@
 
 ### A free, open source, project based course that teaches you JavaScript from scratch with 30 lessons and 30 hands-on projects
 
-[![Stars](https://img.shields.io/github/stars/your-username/learn-javascript-30-days?style=for-the-badge&color=f7df1e&labelColor=0d1117)](https://github.com/your-username/learn-javascript-30-days/stargazers)
-[![Forks](https://img.shields.io/github/forks/your-username/learn-javascript-30-days?style=for-the-badge&color=58a6ff&labelColor=0d1117)](https://github.com/your-username/learn-javascript-30-days/network/members)
-[![License](https://img.shields.io/github/license/your-username/learn-javascript-30-days?style=for-the-badge&color=238636&labelColor=0d1117)](./LICENSE)
+[![Stars](https://img.shields.io/github/stars/hassanireza/learn-javascript-30-days?style=for-the-badge&color=f7df1e&labelColor=0d1117)](https://github.com/your-username/learn-javascript-30-days/stargazers)
+[![Forks](https://img.shields.io/github/forks/hassanireza/learn-javascript-30-days?style=for-the-badge&color=58a6ff&labelColor=0d1117)](https://github.com/your-username/learn-javascript-30-days/network/members)
+[![License](https://img.shields.io/github/license/hassanireza/learn-javascript-30-days?style=for-the-badge&color=238636&labelColor=0d1117)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-db61a2?style=for-the-badge&labelColor=0d1117)](./CONTRIBUTING.md)
 [![Made with JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-f7df1e?style=for-the-badge&labelColor=0d1117)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
