@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 60px auto;
+  text-align: center;
+  color: #1f2933;
+}
+
+#status {
+  font-size: 18px;
+  font-weight: bold;
+}

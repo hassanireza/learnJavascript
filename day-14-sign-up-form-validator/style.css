@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+  max-width: 400px;
+  margin: 60px auto;
+  color: #1f2933;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, button {
+  padding: 8px;
+  font-size: 16px;
+}
+
+#message {
+  font-weight: bold;
+}
