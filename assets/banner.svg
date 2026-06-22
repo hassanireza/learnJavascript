@@ -1,0 +1,36 @@
+<svg width="1200" height="280" viewBox="0 0 1200 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Learn JavaScript in 30 Days banner">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f7df1e"/>
+      <stop offset="100%" stop-color="#f0c419"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="280" rx="18" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="278" rx="17" fill="none" stroke="#30363d" stroke-width="2"/>
+
+  <rect x="48" y="48" width="184" height="184" rx="20" fill="url(#accent)"/>
+  <text x="140" y="172" font-family="Consolas, Menlo, monospace" font-size="96" font-weight="700" fill="#0d1117" text-anchor="middle">JS</text>
+
+  <text x="264" y="118" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#f0f6fc">
+    Learn JavaScript in 30 Days
+  </text>
+  <text x="266" y="158" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" fill="#8b949e">
+    A free, open source, project based JavaScript course for absolute beginners
+  </text>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">
+    <rect x="266" y="184" width="150" height="34" rx="17" fill="#1f6feb" opacity="0.18" stroke="#1f6feb"/>
+    <text x="341" y="206" text-anchor="middle">30 Lessons</text>
+
+    <rect x="428" y="184" width="160" height="34" rx="17" fill="#238636" opacity="0.18" stroke="#238636"/>
+    <text x="508" y="206" text-anchor="middle">30 Projects</text>
+
+    <rect x="600" y="184" width="190" height="34" rx="17" fill="#db61a2" opacity="0.18" stroke="#db61a2"/>
+    <text x="695" y="206" text-anchor="middle">100% Markdown</text>
+  </g>
+</svg>
