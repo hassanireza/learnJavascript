@@ -1,240 +1,368 @@
 <div align="center">
 
-<img src="./assets/banner.svg" alt="Learn JavaScript in 30 Days - a free 30 day JavaScript course with 30 projects" width="100%" />
+<img src="./docs/banner.svg" alt="Python in 30 Days" width="100%"/>
 
-# Learn JavaScript in 30 Days
+<br/>
 
-### A free, open source, project based course that teaches you JavaScript from scratch with 30 lessons and 30 hands-on projects
+[![React](https://img.shields.io/badge/React-18.3-149ECA?style=for-the-badge&logo=react&logoColor=white)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+[![License](https://img.shields.io/badge/License-MIT-FFD43B?style=for-the-badge)](./LICENSE)
+[![Deploy](https://img.shields.io/badge/Deploy-GitHub%20Pages-222222?style=for-the-badge&logo=github)](https://pages.github.com)
 
-[![Stars](https://img.shields.io/github/stars/hassanireza/learn-javascript-30-days?style=for-the-badge&color=f7df1e&labelColor=0d1117)](https://github.com/your-username/learn-javascript-30-days/stargazers)
-[![Forks](https://img.shields.io/github/forks/hassanireza/learn-javascript-30-days?style=for-the-badge&color=58a6ff&labelColor=0d1117)](https://github.com/your-username/learn-javascript-30-days/network/members)
-[![License](https://img.shields.io/github/license/hassanireza/learn-javascript-30-days?style=for-the-badge&color=238636&labelColor=0d1117)](./LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-db61a2?style=for-the-badge&labelColor=0d1117)](./CONTRIBUTING.md)
-[![Made with JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-f7df1e?style=for-the-badge&labelColor=0d1117)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+<br/>
 
-**[Start Learning](./days/day-01-introduction-and-setup/README.md)** &nbsp;&middot;&nbsp; **[View Curriculum](#curriculum)** &nbsp;&middot;&nbsp; **[View Projects](#projects)** &nbsp;&middot;&nbsp; **[Contribute](./CONTRIBUTING.md)**
+> **A free, interactive Python programming course rebuilt as a modern single page application. Thirty daily lessons, thirty hands on projects, full navigation freedom, and a downloadable certificate. No login required to learn, no login required to graduate.**
+
+<br/>
+
+[![Live Demo](https://img.shields.io/badge/%E2%96%B6%20LIVE%20DEMO-Visit%20Site-FFD43B?style=for-the-badge)](#)
+&nbsp;&nbsp;
+[![Get Started](https://img.shields.io/badge/%F0%9F%9A%80%20GET%20STARTED-Local%20Setup-3776AB?style=for-the-badge)](#getting-started)
 
 </div>
 
 ---
 
-## About This Course
+## Table of Contents
 
-**Learn JavaScript in 30 Days** is a structured, beginner friendly JavaScript course built entirely with Markdown and hosted on GitHub. It is designed for people who have never written a line of JavaScript before and want a clear, daily path to becoming job ready in modern JavaScript.
-
-Each day introduces one focused topic, explains it with correct and tested code examples, and ends with a small project you build yourself. By Day 30 you will have written 30 real projects and understand JavaScript fundamentals, the DOM, asynchronous programming, and modern ES6+ syntax well enough to start building real applications or move on to frameworks such as React, Vue, or Node.js.
-
-This repository is intentionally **100% Markdown and plain JavaScript**. No build tools, no paid content, no video paywalls. Open a lesson, read it, write the code, and move to the next one.
-
-### Why this course is different
-
-| | This Course | Typical Tutorials |
-|---|---|---|
-| Format | Structured Markdown, version controlled on GitHub | Scattered videos and blog posts |
-| Practice | A real project every single day | Mostly theory, few projects |
-| Navigation | Linked previous/next lessons, no rabbit holes | Hard to follow a clear order |
-| Cost | Free and open source forever | Often paywalled |
-| Best Practices | Based on MDN, ECMAScript specification, and Airbnb/Google style guides | Inconsistent or outdated advice |
-| Depth | Fundamentals to async JavaScript and OOP | Often stops at the basics |
-
----
-
-## Who This Course Is For
-
-- Complete beginners who have never coded before
-- Developers from another language who want to learn JavaScript properly
-- Students preparing for technical interviews who need a structured refresher
-- Bootcamp graduates who want extra project based practice
-- Anyone who wants a free alternative to paid JavaScript courses
-
-## Prerequisites
-
-You do not need any prior programming experience. You only need:
-
-- A computer with **Windows, macOS, or Linux**
-- A modern web browser, such as **Google Chrome** or **Mozilla Firefox**
-- A free code editor, such as **[Visual Studio Code](https://code.visualstudio.com/)**
-- Curiosity and roughly **30 to 60 minutes a day**
+- [About](#about)
+- [Key Principles](#key-principles)
+- [Feature Overview](#feature-overview)
+- [Screenshots](#screenshots)
+- [Tech Stack](#tech-stack)
+- [Architecture](#architecture)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Available Scripts](#available-scripts)
+- [Deployment to GitHub Pages](#deployment-to-github-pages)
+- [Curriculum](#curriculum)
+- [Authentication Model](#authentication-model)
+- [Certificate](#certificate)
+- [Accessibility and Design](#accessibility-and-design)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
-## How To Use This Repository
+## About
 
-This course follows a simple, predictable folder structure so you always know where you are and what to do next.
+This repository is a TypeScript and React rebuild of the original **Python in 30 Days** Markdown course. Every lesson and every project solution from the original curriculum has been preserved, and wrapped in a fast, accessible, single page application that works entirely in the browser with zero backend.
 
-```text
-learn-javascript-30-days/
-├── README.md                     <- you are here
-├── GETTING_STARTED.md            <- environment setup guide
-├── CONTRIBUTING.md
-├── LICENSE
-├── assets/
-│   └── banner.svg
-├── days/
-│   ├── day-01-introduction-and-setup/
-│   │   └── README.md             <- lesson 1
-│   ├── day-02-variables-and-data-types/
-│   │   └── README.md             <- lesson 2
-│   └── ...                       <- through day-30
-└── projects/
-    ├── day-01-hello-console/
-    │   ├── README.md             <- project brief
-    │   ├── index.html
-    │   ├── style.css
-    │   └── script.js
-    └── ...                       <- through day-30
-```
+The rebuild was guided by one rule above all others: **learning should never be blocked**. There is no wall between a visitor and the content. There is no test a learner must pass to move forward. There is no account required to read a single lesson or to walk away with a certificate.
 
-### Step by step
+## Key Principles
 
-1. **Fork or clone this repository.**
+| Principle | What it means in this app |
+|---|---|
+| Content first | Every one of the 30 lessons and 30 project solutions is reachable in one click from the sidebar, with no gating. |
+| Free navigation | Previous and Next buttons always work. Nothing checks whether you "passed" the current day before letting you continue. |
+| Optional accounts | A login and signup flow exists purely as a UI showcase. It personalizes a greeting and nothing more. |
+| No login certificate | The certificate page asks for a name, renders a certificate live, and lets you download it as a PNG. No account, no server, no quiz score required. |
+| Static and portable | The whole app is a static bundle. It ships to GitHub Pages with a single GitHub Actions workflow and needs no server, database or API keys. |
 
-   ```bash
-   git clone https://github.com/your-username/learn-javascript-30-days.git
-   cd learn-javascript-30-days
-   ```
+## Feature Overview
 
-2. **Open the folder in Visual Studio Code.**
+- **30 day curriculum** covering fundamentals, data structures, control flow, functions, error handling, file I/O, Pythonic idioms, object oriented programming, decorators, generators, context managers, regular expressions, JSON and CSV, working with APIs, and testing with pytest.
+- **Markdown powered lessons** rendered with syntax highlighted code blocks, tables, and callouts, sourced from the original course content.
+- **Project solution viewer** displaying the day's full `solution.py` file with Python syntax highlighting.
+- **Free form navigation** with a persistent sidebar grouped by topic, a home page grid of every day, and Previous and Next controls on each lesson.
+- **Optional progress tracker** stored in the browser that lets a learner mark days complete, purely for their own bookkeeping. It is never used to lock content.
+- **Showcase authentication** with login and signup screens, clearly labeled as a demonstration, backed by `localStorage` instead of a real backend.
+- **No login certificate generator** that renders an SVG certificate live and exports it as a downloadable PNG image.
+- **Responsive, accessible UI** that works on mobile, tablet and desktop, with a collapsible navigation drawer on small screens.
+- **Continuous deployment** to GitHub Pages through a GitHub Actions workflow that lints, type checks, builds and publishes the site automatically on every push to `main`.
 
-   ```bash
-   code .
-   ```
-
-3. **Start with Day 1.** Open [`days/day-01-introduction-and-setup/README.md`](./days/day-01-introduction-and-setup/README.md) and read the lesson.
-
-4. **Build the project for that day** inside the matching folder in `projects/`. Each project folder already contains starter files (`index.html`, `style.css`, `script.js`) with comments telling you exactly what to build.
-
-5. **Use the navigation links** at the bottom of every lesson to move to the next day, or back to the previous one. There is no need to come back to this README until you finish the course.
-
-6. **Commit your progress** as you go, so you build a public history of your learning:
-
-   ```bash
-   git add .
-   git commit -m "Completed Day 1: Introduction and setup"
-   git push
-   ```
-
-For detailed environment setup, including installing Node.js and a Live Server extension, see **[GETTING_STARTED.md](./GETTING_STARTED.md)**.
-
----
-
-## Curriculum
-
-The course is split into five stages of six days each, moving from core fundamentals to real asynchronous, object oriented JavaScript.
-
-### Stage 1 - JavaScript Fundamentals (Days 1-6)
-
-| Day | Lesson | Project |
-|---|---|---|
-| 01 | [Introduction and Setup](./days/day-01-introduction-and-setup/README.md) | [Hello Console](./projects/day-01-hello-console/README.md) |
-| 02 | [Variables and Data Types](./days/day-02-variables-and-data-types/README.md) | [Personal Bio Card](./projects/day-02-personal-bio-card/README.md) |
-| 03 | [Operators and Expressions](./days/day-03-operators-and-expressions/README.md) | [Simple Calculator](./projects/day-03-simple-calculator/README.md) |
-| 04 | [Conditional Statements](./days/day-04-conditional-statements/README.md) | [Grade Calculator](./projects/day-04-grade-calculator/README.md) |
-| 05 | [Loops and Iteration](./days/day-05-loops-and-iteration/README.md) | [Multiplication Table Generator](./projects/day-05-multiplication-table-generator/README.md) |
-| 06 | [Functions](./days/day-06-functions/README.md) | [Tip Calculator](./projects/day-06-tip-calculator/README.md) |
-
-### Stage 2 - Data Structures (Days 7-11)
-
-| Day | Lesson | Project |
-|---|---|---|
-| 07 | [Arrays](./days/day-07-arrays/README.md) | [Console Todo List](./projects/day-07-console-todo-list/README.md) |
-| 08 | [Array Methods](./days/day-08-array-methods/README.md) | [Shopping Cart Total](./projects/day-08-shopping-cart-total/README.md) |
-| 09 | [Objects](./days/day-09-objects/README.md) | [Contact Book](./projects/day-09-contact-book/README.md) |
-| 10 | [Object Methods and this](./days/day-10-object-methods-and-this/README.md) | [Bank Account Simulator](./projects/day-10-bank-account-simulator/README.md) |
-| 11 | [Strings in Depth](./days/day-11-strings-in-depth/README.md) | [Palindrome Checker](./projects/day-11-palindrome-checker/README.md) |
-
-### Stage 3 - The Browser and the DOM (Days 12-15)
-
-| Day | Lesson | Project |
-|---|---|---|
-| 12 | [Introduction to the DOM](./days/day-12-introduction-to-the-dom/README.md) | [DOM Playground](./projects/day-12-dom-playground/README.md) |
-| 13 | [DOM Events](./days/day-13-dom-events/README.md) | [Color Switcher](./projects/day-13-color-switcher/README.md) |
-| 14 | [Forms and Validation](./days/day-14-forms-and-validation/README.md) | [Sign Up Form Validator](./projects/day-14-sign-up-form-validator/README.md) |
-| 15 | [Building a To-Do App](./days/day-15-building-a-todo-app/README.md) | [Interactive To-Do List](./projects/day-15-interactive-todo-list/README.md) |
-
-### Stage 4 - Modern JavaScript (Days 16-21)
-
-| Day | Lesson | Project |
-|---|---|---|
-| 16 | [Scope and Closures](./days/day-16-scope-and-closures/README.md) | [Counter Factory](./projects/day-16-counter-factory/README.md) |
-| 17 | [ES6+ Syntax](./days/day-17-es6-plus-syntax/README.md) | [Recipe Card Renderer](./projects/day-17-recipe-card-renderer/README.md) |
-| 18 | [Spread, Rest, and Default Parameters](./days/day-18-spread-rest-and-default-parameters/README.md) | [Mini Utility Library](./projects/day-18-mini-utility-library/README.md) |
-| 19 | [Higher Order Functions](./days/day-19-higher-order-functions/README.md) | [Mini Sales Dashboard](./projects/day-19-mini-sales-dashboard/README.md) |
-| 20 | [Error Handling](./days/day-20-error-handling/README.md) | [Safe Calculator](./projects/day-20-safe-calculator/README.md) |
-| 21 | [Asynchronous JavaScript Basics](./days/day-21-asynchronous-javascript-basics/README.md) | [Simulated Loading Sequence](./projects/day-21-simulated-loading-sequence/README.md) |
-
-### Stage 5 - Async, OOP, and the Real World (Days 22-30)
-
-| Day | Lesson | Project |
-|---|---|---|
-| 22 | [Promises](./days/day-22-promises/README.md) | [Random User Card Generator](./projects/day-22-random-user-card-generator/README.md) |
-| 23 | [Async and Await](./days/day-23-async-and-await/README.md) | [Quote Generator](./projects/day-23-quote-generator/README.md) |
-| 24 | [Fetch API and JSON](./days/day-24-fetch-api-and-json/README.md) | [GitHub Profile Finder](./projects/day-24-github-profile-finder/README.md) |
-| 25 | [Local Storage](./days/day-25-local-storage/README.md) | [Persistent To-Do List](./projects/day-25-persistent-todo-list/README.md) |
-| 26 | [Classes and OOP](./days/day-26-classes-and-oop/README.md) | [Library Management System](./projects/day-26-library-management-system/README.md) |
-| 27 | [JavaScript Modules](./days/day-27-javascript-modules/README.md) | [Modular Calculator](./projects/day-27-modular-calculator/README.md) |
-| 28 | [Regular Expressions](./days/day-28-regular-expressions/README.md) | [Regex Form Validator](./projects/day-28-regex-form-validator/README.md) |
-| 29 | [Debugging and Testing Basics](./days/day-29-debugging-and-testing-basics/README.md) | [Tested Utility Functions](./projects/day-29-tested-utility-functions/README.md) |
-| 30 | [Capstone Project](./days/day-30-capstone-project/README.md) | [Expense Tracker App](./projects/day-30-expense-tracker-app/README.md) |
-
----
-
-## Projects
-
-All 30 projects live in the [`projects/`](./projects) folder, one folder per day, each with its own `README.md` brief, starter `index.html`, `style.css`, and `script.js`. Projects are deliberately small, no more than a couple of hours each, so you build a daily habit instead of burning out on one big build.
-
-## Best Practices Followed In This Course
-
-Every lesson in this course is written to match real, current JavaScript standards rather than outdated tutorials. Specifically, this course:
-
-- Uses **`let`** and **`const`** instead of `var`, and explains why
-- Uses **strict equality (`===`)** instead of loose equality (`==`)
-- Follows naming conventions from the **[Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)**
-- References the **[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** and the **ECMAScript specification** as the source of truth
-- Teaches **asynchronous JavaScript with Promises and `async`/`await`**, not only outdated callback patterns
-- Encourages **small, pure, single responsibility functions**
-- Introduces **semantic HTML** and accessible form patterns alongside JavaScript
-- Avoids global variables and teaches proper **scope and module boundaries**
-
-## Frequently Asked Questions
-
-**Is this course really free?**
-Yes. The entire course, including every lesson and every project, is open source under the MIT License.
-
-**Do I need to know HTML and CSS first?**
-Basic HTML and CSS helps for the DOM lessons starting on Day 12, but Days 1 to 11 only require JavaScript running in the browser console or Node.js.
-
-**Can I use this content to teach others?**
-Yes, as long as you follow the terms of the [MIT License](./LICENSE), which includes keeping the original copyright notice.
-
-**What if I get stuck on a project?**
-Open an issue in this repository describing what you tried, and the community can help. You can also compare your solution against the lesson's code examples, which are all tested and correct.
-
-**What comes after Day 30?**
-After finishing this course you will be ready to learn a frontend framework such as React or Vue, or a backend runtime such as Node.js, with a solid JavaScript foundation already in place.
-
----
-
-## Contributing
-
-Contributions are welcome and encouraged. Whether it is fixing a typo, improving an explanation, or adding a new project variation, please read the **[Contributing Guide](./CONTRIBUTING.md)** before opening a pull request.
-
-If this course helped you, consider:
-
-- Starring this repository
-- Sharing it with someone who is learning to code
-- Opening an issue if you find an error, no matter how small
-
-## License
-
-This project is licensed under the **[MIT License](./LICENSE)**. You are free to use, copy, modify, and distribute this material with attribution.
-
----
+## Screenshots
 
 <div align="center">
 
-**[Begin Day 1: Introduction and Setup &rarr;](./days/day-01-introduction-and-setup/README.md)**
+| Home | Lesson View | Certificate |
+|---|---|---|
+| Curriculum grid with progress stats | Markdown lesson with code and project panel | Live certificate preview and PNG export |
 
-Made for everyone learning to code. If this repository helps you, please consider giving it a star.
+</div>
+
+> Replace the placeholders above with real screenshots once the project is deployed. Recommended path: `docs/screenshots/home.png`, `docs/screenshots/lesson.png`, `docs/screenshots/certificate.png`.
+
+## Tech Stack
+
+<div align="center">
+
+[![React](https://img.shields.io/badge/React-18-149ECA?logo=react&logoColor=white)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)](https://vitejs.dev)
+[![React Router](https://img.shields.io/badge/React%20Router-6-CA4245?logo=reactrouter&logoColor=white)](https://reactrouter.com)
+[![ESLint](https://img.shields.io/badge/ESLint-8-4B32C3?logo=eslint&logoColor=white)](https://eslint.org)
+[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?logo=githubactions&logoColor=white)](https://github.com/features/actions)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Hosting-222222?logo=github&logoColor=white)](https://pages.github.com)
+
+</div>
+
+| Layer | Choice | Why |
+|---|---|---|
+| UI framework | React 18 with function components and hooks | Predictable state management for navigation, auth and progress |
+| Language | TypeScript, strict mode | Type safety across routing, context and content loading |
+| Build tool | Vite | Instant dev server, native ES modules, first class static asset handling |
+| Routing | React Router 6, `HashRouter` | Client side routing that survives a full page refresh on GitHub Pages without a server rewrite rule |
+| Content | Raw Markdown and Python files bundled with `import.meta.glob` | Keeps the original lesson content as the single source of truth, no CMS or database needed |
+| Markdown rendering | `react-markdown` with `remark-gfm` | Tables, task lists and full GitHub flavored Markdown support |
+| Code highlighting | `react-syntax-highlighter` | Accurate Python syntax highlighting for lessons and project solutions |
+| State | React Context plus `localStorage` | Lightweight, dependency free persistence for the showcase auth and progress tracker |
+| CI/CD | GitHub Actions | Lint, type check, build and deploy automatically on every push |
+| Hosting | GitHub Pages | Free static hosting with a custom domain option |
+
+## Architecture
+
+<div align="center">
+<img src="./docs/architecture.svg" alt="Architecture diagram" width="100%"/>
+</div>
+
+The application is intentionally simple:
+
+1. Thirty lesson files (`lesson.md`) and thirty project files (`solution.py`) live under `src/content/day-XX/`.
+2. Vite bundles that content at build time as raw text using `import.meta.glob`, so there is no runtime fetch and no flash of missing content.
+3. React Router renders a `Layout` shell (navbar plus sidebar) around each page. The `DayPage` route resolves a day number from the URL, pulls the matching Markdown and Python content, and renders it with free Previous and Next controls.
+4. Two React contexts back the interactive pieces of the UI: `AuthContext` for the showcase login state and `ProgressContext` for the optional "mark complete" tracker. Both persist to `localStorage` only, keeping the app entirely static.
+5. GitHub Actions builds the app on every push to `main`, then publishes the `dist/` output to GitHub Pages using the official `actions/deploy-pages` action.
+
+## Project Structure
+
+```text
+python-30-days-react/
+├── .github/
+│   └── workflows/
+│       ├── ci.yml            CI checks on pull requests
+│       └── deploy.yml        Build and deploy to GitHub Pages
+├── docs/
+│   ├── banner.svg
+│   └── architecture.svg
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   ├── Layout.tsx        Page shell: navbar + sidebar + outlet
+│   │   ├── Navbar.tsx        Top navigation, progress meter, auth controls
+│   │   ├── Sidebar.tsx       Full curriculum list grouped by topic
+│   │   ├── Footer.tsx
+│   │   ├── CodeBlock.tsx     Syntax highlighted code renderer
+│   │   └── Certificate.tsx   SVG certificate template
+│   ├── context/
+│   │   ├── AuthContext.tsx     Showcase-only auth, localStorage backed
+│   │   └── ProgressContext.tsx Optional, non-blocking progress tracker
+│   ├── data/
+│   │   ├── curriculum.ts     Static metadata for all 30 days
+│   │   └── content.ts        Loads raw lesson/solution files at build time
+│   ├── content/
+│   │   └── day-01 .. day-30/
+│   │       ├── lesson.md
+│   │       └── solution.py
+│   ├── pages/
+│   │   ├── Home.tsx
+│   │   ├── DayPage.tsx
+│   │   ├── Login.tsx
+│   │   ├── Signup.tsx
+│   │   ├── CertificatePage.tsx
+│   │   └── NotFound.tsx
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── index.html
+├── vite.config.ts
+├── tsconfig.json
+├── package.json
+└── README.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org) 20 or later
+- npm 10 or later (bundled with Node.js)
+
+### Installation
+
+```bash
+git clone https://github.com/<your-username>/python-30-days-react.git
+cd python-30-days-react
+npm install
+```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`.
+
+### Build for production
+
+```bash
+npm run build
+npm run preview
+```
+
+## Available Scripts
+
+| Script | Description |
+|---|---|
+| `npm run dev` | Starts the Vite development server with hot module reload |
+| `npm run build` | Type checks the project and produces an optimized build in `dist/` |
+| `npm run preview` | Serves the production build locally to sanity check before deploying |
+| `npm run lint` | Runs ESLint across the codebase |
+
+## Deployment to GitHub Pages
+
+This project deploys itself. The included workflow at `.github/workflows/deploy.yml` runs on every push to `main` and:
+
+1. Checks out the repository
+2. Installs dependencies with `npm ci`
+3. Lints and type checks the project
+4. Builds the production bundle with `npm run build`
+5. Uploads and publishes the `dist/` folder to GitHub Pages using `actions/deploy-pages`
+
+### One time repository setup
+
+1. Push this repository to GitHub.
+2. In your repository, open **Settings → Pages**.
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+4. If your repository name is not `python-30-days-react`, update the `REPO_NAME` constant in `vite.config.ts` so the built asset paths match your GitHub Pages sub path.
+5. Push to `main`. The **Deploy to GitHub Pages** workflow will build and publish automatically. Your site will be live at:
+
+```text
+https://<your-username>.github.io/<your-repo-name>/
+```
+
+The app uses React Router's `HashRouter`, so deep links such as `/#/day/12` work correctly on GitHub Pages without needing a custom 404 redirect trick.
+
+## Curriculum
+
+<div align="center">
+
+| Week | Focus | Days |
+|---|---|---|
+| Week 1 | Fundamentals | Setup, Variables, Strings, Numbers, User Input |
+| Week 2 | Data Structures and Control Flow | Lists, Tuples, Sets, Dictionaries, Conditionals, Loops |
+| Week 3 | Functions and Robust Code | Functions, Type Hints, Scope, Error Handling, File I/O |
+| Week 4 | Pythonic Code and OOP | Comprehensions, Lambda/Map/Filter, Modules, Classes, Inheritance, Dunder Methods |
+| Week 5 | Advanced Python and Real Data | Decorators, Generators, Context Managers, Regex, JSON/CSV, APIs |
+| Final Stretch | Professional Practices | Testing with pytest, Final CLI Todo App project |
+
+</div>
+
+Full day by day breakdown:
+
+| Day | Title | Topic |
+|---|---|---|
+| 01 | Setup & Hello World | Fundamentals |
+| 02 | Variables & Data Types | Fundamentals |
+| 03 | Strings & String Methods | Fundamentals |
+| 04 | Numbers & Math Operations | Fundamentals |
+| 05 | User Input | Fundamentals |
+| 06 | Lists | Data Structures |
+| 07 | Tuples, Sets & Booleans | Data Structures |
+| 08 | Dictionaries | Data Structures |
+| 09 | Conditionals | Control Flow |
+| 10 | for Loops | Control Flow |
+| 11 | while Loops | Control Flow |
+| 12 | Functions Basics | Functions |
+| 13 | Function Arguments & Type Hints | Functions |
+| 14 | Scope & Closures | Functions |
+| 15 | Error Handling | Robust Code |
+| 16 | File I/O | Robust Code |
+| 17 | List Comprehensions | Pythonic Code |
+| 18 | Lambda, Map, Filter & Sorted | Pythonic Code |
+| 19 | Modules & Packages | Pythonic Code |
+| 20 | OOP: Classes & Objects | Object Oriented Programming |
+| 21 | OOP: Inheritance & Polymorphism | Object Oriented Programming |
+| 22 | Dunder Methods | Object Oriented Programming |
+| 23 | Decorators | Advanced Python |
+| 24 | Generators & Iterators | Advanced Python |
+| 25 | Context Managers | Advanced Python |
+| 26 | Regular Expressions | Real World Data |
+| 27 | JSON & CSV Data | Real World Data |
+| 28 | Working with APIs | Real World Data |
+| 29 | Testing with pytest | Professional Practices |
+| 30 | Final Project: CLI Todo App | Professional Practices |
+
+## Authentication Model
+
+This project intentionally ships a login and signup screen that does **not** gate any content. It exists to demonstrate what an authenticated experience could look like in the UI, nothing more.
+
+```text
+                    ┌─────────────────────────┐
+                    │   Visitor opens the app  │
+                    └────────────┬────────────┘
+                                 │
+                 ┌───────────────┴────────────────┐
+                 │                                 │
+                 ▼                                 ▼
+     ┌───────────────────────┐        ┌─────────────────────────┐
+     │ Browses lessons freely │        │ Optionally signs up      │
+     │ No account needed      │        │ or logs in (showcase)    │
+     └───────────┬───────────┘        └────────────┬─────────────┘
+                 │                                  │
+                 ▼                                  ▼
+     ┌───────────────────────┐        ┌─────────────────────────┐
+     │ Marks days complete    │        │ Sees a personalized      │
+     │ (stored in browser)    │        │ greeting in the navbar   │
+     └───────────┬───────────┘        └────────────┬─────────────┘
+                 │                                  │
+                 └────────────────┬─────────────────┘
+                                  ▼
+                    ┌─────────────────────────┐
+                    │ Generates certificate    │
+                    │ any time, no login,      │
+                    │ no test score required   │
+                    └─────────────────────────┘
+```
+
+Key facts about the showcase auth:
+
+- Accounts are stored in `localStorage` under the current browser only. There is no backend, no database and no network request involved.
+- Signing up or logging in only changes the greeting shown in the navbar. It never unlocks or restricts any lesson.
+- The certificate page never checks whether a user is logged in.
+
+## Certificate
+
+The `/certificate` route renders a live SVG certificate that updates as you type your name, and can be exported to a PNG file with a single click. There is no login requirement and no minimum number of completed lessons. The certificate is available the moment you land on the page, because learning should be rewarded on your terms, not gated behind arbitrary checkpoints.
+
+## Accessibility and Design
+
+- Semantic HTML throughout, including proper heading hierarchy inside rendered lessons.
+- Keyboard accessible navigation links and buttons.
+- Color palette inspired by the official Python brand colors (blue and yellow) on a high contrast dark theme for comfortable long reading sessions.
+- Responsive layout with a collapsible sidebar drawer below 900px width.
+
+## Roadmap
+
+- [ ] Add optional dark and light theme toggle
+- [ ] Add search across lessons
+- [ ] Add code playground for running snippets in the browser
+- [ ] Add downloadable PDF certificate in addition to PNG
+- [ ] Add i18n support for translated lessons
+
+## Contributing
+
+Contributions are welcome. Please open an issue to discuss significant changes before submitting a pull request.
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/my-improvement`
+3. Commit your changes: `git commit -m "Add my improvement"`
+4. Push to your branch: `git push origin feature/my-improvement`
+5. Open a pull request
+
+Please run `npm run lint` and `npm run build` locally before submitting a pull request. Both checks also run automatically in CI on every pull request.
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE). Course content is adapted from the original Python in 30 Days curriculum and remains free for personal and educational use.
+
+<div align="center">
+
+Made for learners who just want to start writing Python, without filling out a form first.
 
 </div>
