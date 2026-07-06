@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 60px auto;
+  text-align: center;
+  color: #1f2933;
+}
+
+button {
+  margin: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.highlight {
+  color: #db61a2;
+}
