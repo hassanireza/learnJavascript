@@ -11,7 +11,7 @@ export const Footer: React.FC = () => (
       </div>
       <p className="footer-copy">Learn JavaScript in 30 Days. A React and TypeScript showcase project.</p>
       <div className="footer-links">
-        <a href="https://github.com" target="_blank" rel="noreferrer">View on GitHub</a>
+        <a href="https://github.com/hassanireza/learnJavascript" target="_blank" rel="noreferrer" className="footer-github-link">View on GitHub</a>
       </div>
     </div>
   </footer>

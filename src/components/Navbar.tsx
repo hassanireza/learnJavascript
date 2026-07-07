@@ -28,13 +28,15 @@ export const Navbar: React.FC = () => {
       <ul className={`nav-links${open ? ' open' : ''}`} key={location.pathname}>
         <li><Link to="/dashboard" onClick={closeMenu}>Dashboard</Link></li>
         <li><Link to="/profile" onClick={closeMenu}>Profile</Link></li>
-        {certificate && (
-          <li>
-            <Link to={`/certificate/${certificate.certId}`} className="nav-cert-link" onClick={closeMenu}>
-              My Certificate
-            </Link>
-          </li>
-        )}
+        <li>
+          <Link
+            to={certificate ? `/certificate/${certificate.certId}` : '/exam'}
+            className="nav-cert-link"
+            onClick={closeMenu}
+          >
+            {certificate ? 'My Certificate' : 'Get Certificate'}
+          </Link>
+        </li>
         {isAuthenticated ? (
           <>
             <li><span className="nav-demo-tag">Demo: {user?.username}</span></li>

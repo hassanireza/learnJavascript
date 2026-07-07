@@ -89,6 +89,10 @@ h1, h2, h3 { font-family: var(--font-d); font-weight: 700; letter-spacing: 0.01e
   transition: color 0.15s ease;
 }
 .nav-links a:hover { color: var(--white); }
+.nav-links a.btn-primary,
+.nav-links a.btn-primary:hover,
+.nav-links a.btn-glow,
+.nav-links a.btn-glow:hover { color: var(--white); }
 .nav-cert-link { color: var(--gold) !important; }
 .nav-demo-tag {
   font-size: 0.62rem;
@@ -217,8 +221,20 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .footer-inner { max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; justify-content: space-between; }
 .footer-brand { display: flex; align-items: center; gap: 10px; font-family: var(--font-d); font-size: 0.78rem; }
 .footer-brand img { width: 26px; border-radius: 6px; }
-.footer-copy, .footer-links a { color: var(--dim); font-size: 0.78rem; text-decoration: none; }
-.footer-links a:hover { color: var(--cyan); }
+.footer-copy { color: var(--dim); font-size: 0.78rem; }
+.footer-links a.footer-github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--white);
+  font-size: 0.78rem;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 7px 16px;
+  transition: all 0.15s ease;
+}
+.footer-links a.footer-github-link:hover { border-color: var(--cyan); color: var(--cyan); }
 
 /* ==========================================================================
    Dashboard

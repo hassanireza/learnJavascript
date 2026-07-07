@@ -6,12 +6,21 @@ import { useToast } from '../context/ToastContext';
 
 export const Profile: React.FC = () => {
   const { user, isAuthenticated, updateProfile } = useAuth();
-  const { completedCount, totalLessons, certificate } = useProgress();
+  const { completedCount, totalLessons, certificate, resetAllProgress } = useProgress();
   const { showToast } = useToast();
 
   const [firstName, setFirstName] = useState(user?.firstName ?? '');
   const [lastName, setLastName] = useState(user?.lastName ?? '');
   const [email, setEmail] = useState(user?.email ?? '');
+
+  const handleReset = () => {
+    const confirmed = window.confirm(
+      'This will erase all lesson progress, exam attempts, and your certificate from this browser. This cannot be undone. Continue?'
+    );
+    if (!confirmed) return;
+    resetAllProgress();
+    showToast('Your progress has been reset.', 'info');
+  };
 
   if (!isAuthenticated) {
     return (
@@ -27,6 +36,29 @@ export const Profile: React.FC = () => {
             can try with <Link to="/login">a demo login</Link> or by{' '}
             <Link to="/register">creating a demo account</Link>.
           </p>
+        </div>
+
+        <div className="profile-card" style={{ marginBottom: 20 }}>
+          <h3 style={{ marginTop: 0 }}>Your Progress</h3>
+          <p style={{ color: 'var(--muted)' }}>
+            {completedCount} / {totalLessons} lessons complete
+            {certificate && (
+              <>
+                {' '}· Certificate earned:{' '}
+                <Link to={`/certificate/${certificate.certId}`}>{certificate.certId}</Link>
+              </>
+            )}
+          </p>
+        </div>
+
+        <div className="profile-card">
+          <h3 style={{ marginTop: 0 }}>Reset Progress</h3>
+          <p style={{ color: 'var(--muted)', fontSize: '0.88rem', marginBottom: 16 }}>
+            Clears all lesson completions, exam attempts, and your certificate from this browser.
+          </p>
+          <button type="button" className="btn-outline" onClick={handleReset}>
+            Reset All Progress
+          </button>
         </div>
       </div>
     );
@@ -85,6 +117,17 @@ export const Profile: React.FC = () => {
           </div>
           <button type="submit" className="btn-glow">Save Changes</button>
         </form>
+      </div>
+
+      <div className="profile-card" style={{ marginTop: 20 }}>
+        <h3 style={{ marginTop: 0 }}>Reset Progress</h3>
+        <p style={{ color: 'var(--muted)', fontSize: '0.88rem', marginBottom: 16 }}>
+          Clears all lesson completions, exam attempts, and your certificate from this browser.
+          Your profile details above are not affected.
+        </p>
+        <button type="button" className="btn-outline" onClick={handleReset}>
+          Reset All Progress
+        </button>
       </div>
     </div>
   );
